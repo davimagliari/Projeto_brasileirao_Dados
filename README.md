@@ -1,19 +1,32 @@
-# ⚽ Projeto de Análise de Dados: Brasileirão (2007 - 2023)
+## Resultados da Análise Exploratória
 
-## 📖 O que é este projeto?
-Este repositório guarda o nosso trabalho da faculdade focado em analisar os dados históricos do Campeonato Brasileiro de Futebol (Série A). A nossa ideia é explorar os dados de 2007 a 2023 para descobrir curiosidades, ver como os times se saem jogando em casa ou fora, e entender como o campeonato mudou ao longo desses anos.
+A análise exploratória foi realizada com base em dados históricos do Campeonato Brasileiro, contendo 6.460 registros e 9 variáveis.
 
-## 📂 Como organizamos as pastas
-Para não virar bagunça, tentamos separar tudo certinho:
-* `data/`: Aqui ficam as planilhas. A original do Kaggle e a que nós vamos limpar.
-* `docs/`: Onde vamos colocar as entregas das etapas do trabalho.
-* `scripts/`: Nossos códigos em Python para gerar os gráficos e calcular as médias.
-* `outputs/`: Onde vamos salvar as imagens dos gráficos que o código gerar.
-* `storytelling/`: O texto final e o painel que vamos usar na apresentação.
+### Qualidade dos dados
 
-## 🛠️ Ferramentas que vamos usar
-* **Linguagens:** SQL (para filtrar as tabelas) e Python (para os gráficos)
-* **Onde pegamos os dados:** Baixamos a base histórica direto do Kaggle.
+Foram identificados poucos valores ausentes:
+- 1 valor nulo em gols do mandante (`goalsht`)
+- 1 valor nulo em gols do visitante (`goalsvt`)
 
----
-**Feito por:** Davi Magliari e Daniel Silva Souza Filho
+Isso indica boa qualidade da base para análise.
+
+### Frequência de resultados
+
+- Mandante: 3168 vitórias
+- Empate: 1740 partidas
+- Visitante: 1552 vitórias
+
+Observa-se que as equipes mandantes vencem com maior frequência.
+
+### Média de gols
+
+- Mandante: 1,48 gols por partida
+- Visitante: 0,99 gols por partida
+
+Os dados mostram que os mandantes não apenas vencem mais, mas também marcam mais gols.
+
+### Interpretação
+
+Os resultados indicam a presença do chamado **fator casa**, no qual as equipes têm melhor desempenho quando jogam em seus estádios.
+
+Essa análise demonstra que padrões relevantes podem ser identificados a partir dos dados, contribuindo para uma compreensão mais objetiva do comportamento do campeonato.
