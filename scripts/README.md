@@ -24,5 +24,5 @@ Bibliotecas utilizadas:
 - NumPy
 - Matplotlib
 
-O script utilizado neste projeto é o arquivo `analise_exploratoria.py`. :contentReference[oaicite:0]{index=0}
+O script utilizado neste projeto é o arquivo `analise_exploratoria.py`.
 
